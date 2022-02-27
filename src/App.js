@@ -1,13 +1,17 @@
 import "./App.css";
-import Sunset from "./Sunset.PNG";
+import Dictionary from "./Dictionary";
 
 export default function App() {
 	return (
 		<div className="App">
-			<h1>Hello from Dictionary App</h1>
-			<button className="btn btn-primary">Submit</button>
-			<br />
-			<img src={Sunset} alt="picture of a sunset" />
+			<div className="container">
+				<header>
+					<h1>Dictionary</h1>
+					<h3 className="mb-4">What word do you want to look up?</h3>
+				</header>
+				<Dictionary />
+				<footer>Coded by Jenna Wamsley</footer>
+			</div>
 		</div>
 	);
 }
