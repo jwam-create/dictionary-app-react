@@ -1,20 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results";
 import "./Dictionary.css";
 
 export default function Dictionary() {
 	const [value, setValue] = useState(null);
-	const [data, setData] = useState("");
+	const [data, setData] = useState(null);
 
 	function handleResponse(response) {
-		setData({
-			word: response.data[0].word,
-			phonetic: response.data[0].phonetics[0].text,
-			noun: response.data[0].meanings[0].definitions[0].definition,
-			verb: response.data[0].meanings[1].definitions[0].definition,
-		});
-		console.log(response.data[0]);
-		console.log(response.data[0].word);
+		setData(response.data[0]);
 	}
 
 	function search(event) {
@@ -40,6 +34,7 @@ export default function Dictionary() {
 				/>
 				<input type="submit" className="btn btn-primary ms-3" value="Search" />
 			</form>
+			<Results results={data} />
 		</div>
 	);
 }
