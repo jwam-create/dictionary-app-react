@@ -11,3 +11,17 @@
 	border-radius: 8px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 10%);
 }
+.Dictionary input {
+	color: 333;
+	opacity: 0.8;
+	padding: 6px 10px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+}
+.Dictionary .hint {
+	text-align: left;
+	margin: 5px auto 0;
+	font-size: 12px;
+	opacity: 0.7;
+	padding-left: 3px;
+}

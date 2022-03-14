@@ -10,6 +10,7 @@
 }
 .App h1 {
 	font-size: 55px;
+	margin-bottom: 0;
 }
 .App h3 {
 	opacity: 0.7;

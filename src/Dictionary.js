@@ -28,12 +28,13 @@ export default function Dictionary() {
 				<form className="d-inline-flex" onSubmit={search}>
 					<input
 						type="search"
-						placeholder="Search for a word"
+						placeholder="Type a word"
 						autoFocus={true}
 						className="form-control"
 						onChange={handleSearchInput}
 					/>
 				</form>
+				<p className="hint">Suggestions: sunset, cat, yoga, forest...</p>
 			</section>
 			<Results results={data} />
 		</div>

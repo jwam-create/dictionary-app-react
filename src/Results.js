@@ -1,12 +1,13 @@
 import React from "react";
 import Meaning from "./Meaning";
+import "./Results.css";
 
 export default function Results(props) {
 	if (props.results) {
 		return (
 			<div className="Results">
 				<section>
-					<h2 className="text-capitalize">{props.results.word}</h2>
+					<h2 className="text-capitalize word">{props.results.word}</h2>
 
 					<h4>
 						{props.results.phonetics.map(function (phonetics, index) {
@@ -14,7 +15,7 @@ export default function Results(props) {
 								<div key={index}>
 									<a href={phonetics.audio} target="_blank" rel="noreferrer">
 										Listen
-									</a>
+									</a>{" "}
 									{phonetics.text}
 								</div>
 							);
