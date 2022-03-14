@@ -24,16 +24,17 @@ export default function Dictionary() {
 
 	return (
 		<div className="Dictionary">
-			<form className="d-inline-flex" onSubmit={search}>
-				<input
-					type="search"
-					placeholder="Search for a word"
-					autoFocus={true}
-					className="form-control"
-					onChange={handleSearchInput}
-				/>
-				<input type="submit" className="btn btn-primary ms-3" value="Search" />
-			</form>
+			<section>
+				<form className="d-inline-flex" onSubmit={search}>
+					<input
+						type="search"
+						placeholder="Search for a word"
+						autoFocus={true}
+						className="form-control"
+						onChange={handleSearchInput}
+					/>
+				</form>
+			</section>
 			<Results results={data} />
 		</div>
 	);

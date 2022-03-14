@@ -7,7 +7,6 @@ export default function App() {
 			<div className="container">
 				<header>
 					<h1>Dictionary</h1>
-					<h3 className="mb-4">What word do you want to look up?</h3>
 				</header>
 				<Dictionary />
 				<footer className="opacity-75">
@@ -16,7 +15,7 @@ export default function App() {
 						href="https://github.com/jwam-create/dictionary-app-react"
 						target="_blank"
 					>
-						github
+						Github
 					</a>
 					.
 				</footer>

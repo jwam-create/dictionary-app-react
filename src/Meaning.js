@@ -4,7 +4,7 @@ import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
 	return (
-		<div className="Meaning">
+		<section className="Meaning">
 			<h4>{props.meaning.partOfSpeech} </h4>
 			{props.meaning.definitions.map(function (definition, index) {
 				if (index < 2) {
@@ -22,6 +22,6 @@ export default function Meaning(props) {
 					return null;
 				}
 			})}
-		</div>
+		</section>
 	);
 }
