@@ -10,7 +10,16 @@ export default function App() {
 					<h3 className="mb-4">What word do you want to look up?</h3>
 				</header>
 				<Dictionary />
-				<footer>Coded by Jenna Wamsley</footer>
+				<footer className="opacity-75">
+					Coded by Jenna Wamsley and open sourced on{" "}
+					<a
+						href="https://github.com/jwam-create/dictionary-app-react"
+						target="_blank"
+					>
+						github
+					</a>
+					.
+				</footer>
 			</div>
 		</div>
 	);
