@@ -5,9 +5,11 @@ export default function Photos(props) {
 		return (
 			<ul>
 				{props.photos.map(function (photo) {
-					<li key={photo.id}>
-						<img src={photo.src.small} alt="" />
-					</li>;
+					return (
+						<li key={photo.id}>
+							<img src={photo.src.small} alt="" />
+						</li>
+					);
 				})}
 			</ul>
 		);
