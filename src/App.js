@@ -8,7 +8,7 @@ export default function App() {
 				<header>
 					<h1>Dictionary</h1>
 				</header>
-				<Dictionary defaultKeyword="forest" />
+				<Dictionary defaultKeyword="Twilight" />
 				<footer className="opacity-75">
 					Coded by Jenna Wamsley and open sourced on{" "}
 					<a

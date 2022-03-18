@@ -12,11 +12,11 @@ export default function Results(props) {
 					<h4>
 						{props.results.phonetics.map(function (phonetics, index) {
 							return (
-								<div key={index}>
+								<div key={index} className="Phonetics">
 									<a href={phonetics.audio} target="_blank" rel="noreferrer">
 										Listen
 									</a>{" "}
-									{phonetics.text}
+									<span className="text">{phonetics.text}</span>
 								</div>
 							);
 						})}

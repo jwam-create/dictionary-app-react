@@ -1,6 +1,12 @@
 .Synonyms {
 	padding: 0;
+	margin: 0 0 5px;
 }
 .Synonyms li {
 	list-style: none;
+	display: inline-block;
+	font-size: 14px;
+	padding-right: 10px;
+	line-height: 1;
+	opacity: 0.9;
 }

@@ -2,4 +2,31 @@
 	font-size: 36px;
 	line-height: 1.5;
 	font-weight: 625;
+	text-align: left;
+}
+
+.Results .Phonetics {
+	margin: 20px 0;
+	text-align: left;
+}
+.Results .Phonetics a {
+	color: #885df1;
+	border: 1px solid #ddd;
+	text-decoration: none;
+	padding: 8px 15px;
+	font-size: 13px;
+	font-weight: bold;
+	margin-right: 10px;
+	border-radius: 20px;
+	transition: all 150ms ease-in-out;
+}
+.Results .Phonetics a:hover {
+	color: white;
+	background: #885df1;
+}
+
+.Results .text {
+	opacity: 0.6;
+	font-size: 18px;
+	font-weight: bold;
 }

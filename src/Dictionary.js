@@ -34,6 +34,7 @@ export default function Dictionary(props) {
 		return (
 			<div className="Dictionary">
 				<section>
+					<h2>What word do you want to look up?</h2>
 					<form className="d-inline-flex" onSubmit={handleSubmit}>
 						<input
 							type="search"
@@ -41,6 +42,7 @@ export default function Dictionary(props) {
 							autoFocus={true}
 							className="form-control"
 							onChange={handleSearchInput}
+							defaultValue={props.defaultKeyword}
 						/>
 					</form>
 					<p className="hint">Suggestions: sunset, cat, yoga, forest...</p>
