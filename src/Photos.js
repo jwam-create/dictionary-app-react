@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Photos(props) {
-	return <div>{props.photos}</div>;
+	if (props.photos) {
+		return <div>{props.photos}</div>;
+	} else {
+		return null;
+	}
 }
