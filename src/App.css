@@ -1,6 +1,11 @@
 .App {
 	min-height: 100vh;
 	background-color: #f9f8fe;
+	max-width: 960px;
+	margin: 0 auto;
+}
+#root {
+	background-color: #f9f8fe;
 }
 
 .App header {
