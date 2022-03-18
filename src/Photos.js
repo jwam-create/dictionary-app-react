@@ -2,7 +2,15 @@ import React from "react";
 
 export default function Photos(props) {
 	if (props.photos) {
-		return <div>{props.photos}</div>;
+		return (
+			<ul>
+				{props.photos.map(function (photo) {
+					<li key={photo.id}>
+						<img src={photo.src.small} alt="" />
+					</li>;
+				})}
+			</ul>
+		);
 	} else {
 		return null;
 	}

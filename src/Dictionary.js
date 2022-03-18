@@ -15,8 +15,8 @@ export default function Dictionary(props) {
 		setData(response.data[0]);
 	}
 	function handlePhotosApiResponse(response) {
-		console.log(response);
-		setPhotos(response.data);
+		console.log(response.data.photos);
+		setPhotos(response.data.photos);
 	}
 
 	function search() {
