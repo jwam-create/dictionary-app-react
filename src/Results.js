@@ -7,7 +7,7 @@ export default function Results(props) {
 		return (
 			<div className="Results">
 				<section>
-					<h2 className="text-capitalize word">{props.results.word}</h2>
+					<h1 className="text-capitalize word">{props.results.word}</h1>
 
 					<h4>
 						{props.results.phonetics.map(function (phonetics, index) {
